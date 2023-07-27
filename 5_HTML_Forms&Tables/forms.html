@@ -9,31 +9,106 @@
 
 <body>
     <h1> Forms </h1>
-
-    <form action="/IDon'tKnowThatWhatCanIWriteHere">
-        <div>
+    <!-- submit sends us form's action statement's link -->
+    <form action="/Bird_Bird">
+        <div><!-- *Name-- we use Name statement for when we want to send a data with submit button. -->
             <label for="textId">For the Text please click: </label>
-            <input type="text" placeholder="Message" id="textId">
+            <input type="text" placeholder="Message" id="textId" name="MyMessage">
             <!-- placeholder stay inside the input block until someone write something  -->
         </div>
         <!-- we use label for the associate with its input -->
         <div>
             <label for="colorId">For the Color please click:</label>
-            <input type="color" placeholder=" colour" id="colorId">
+            <input type="color" placeholder=" colour" id="colorId" name="MyColour">
         </div>
         <div>
             <label for="numberId"> For the Number please click:</label>
-            <input type="number" placeholder=" Only Number" id="numberId">
+            <input type="number" placeholder=" Only Number" id="numberId" name="MyNumber">
 
         </div>
         <div>
             <label for="passwordId">For the Password please click:</label>
-            <input type="password" placeholder="sss it is a secret" id="passwordId">
+            <input type="password" placeholder="sss it is a secret" id="passwordId" name="MyPassword">
         </div>
+        <hr>
+        <!-- button's default is ''submit''. Example like in the below -->
+        <button> Simple button </button>
+        <button type="submit"> Submit button </button>
+        <button type="button"> Just Button</button>
+        <input type="button" value="Input's button">
+        <input type="submit" value="Input'ss submit button">
     </form>
+    <button> Default but not inside of the Form</button>
+    <hr>
+    <!-- https://www.reddit.com/search/?q=something -->
+    <p>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button type="submit">Search</button>
+    </form>
+    </p>
+    <!-- https://www.youtube.com/results?search_query=something -->
+    <p>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button type="submit">Search</button>
+    </form>
+    </p>
+    <!-- https://www.google.com.tr/search?q=something -->
+    <p>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com.tr/search">
+        <input type="text" name="q">
+        <button type="submit">Search</button>
+    </form>
+    </p>
+    <p>
+    <h2>More Inputs</h2>
+    <form action="/something">
+        <div>
+            <input type="checkbox" id="checkboxId" name="Clicked">
+            <label for="checkboxId"> Just do something</label>
+        </div>
+        <hr>
+        <div>
+            <label for="xs">XS Size</label>
+            <input type="radio" name="size" id="xs" value="xsSelected">
+        </div>
+        <div>
+            <label for="s">S Size</label>
+            <input type="radio" name="size" id="s" value="sSelected">
+        </div>
+        <div>
+            <label for="m">M Size</label>
+            <input type="radio" name="size" id="m" value="mSelected">
+        </div>
 
+        <button type="submit">Submit Button</button> <!--    file:///C:/something?Clicked=on&size=sSelected -->
 
-
+        <!-- we can do 'Select' statement whether inside of form or outside -->
+        <div>
+            <label for="selectID">Here my Select Statement</label>
+            <Select id="selectID" name="select">
+                <option value="">Please Select anything </option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="tortoise">Tortoise</option>
+                <!-- file:///C:/something?Clicked=on&size=mSelected&select=cat we only send value part  -->
+            </Select>
+        </div>
+        <div>
+            <input type="range" name="range" id="rangeId" min="18" max="58" step="4">
+            <label for="rangeId">Pick a number</label>
+        </div>
+        <label for="textareaId"><h4>You can write what you think</h4></label>
+        <div>
+        <textarea name="textarea" id="textareaId" cols="30" rows="10" placeholder="Just write something"></textarea>
+    </div>
+    </form>
+    </p>
 
 
 
@@ -42,9 +117,8 @@
 </html>
 
 
-
-
-
-
+<!-- file:///C:/Bird_Bird?MyMessage=message+Baby&MyColour=%23a9d728&MyNumber=31&MyPassword=paswordWuuu -->
+<!-- *Name-- we use Name statement for when we want to send a data with submit button. -->
+<!-- button's default is ''submit''. Example like in the below -->
 <!-- we use label for the associate with its input -->
 <!-- placeholder stay inside the input block until someone write something  -->
