@@ -1,0 +1,36 @@
+
+h2 {
+ color: burlywood;
+ background-color: rgb(168, 226, 227);   
+}
+ /* This is a system of writing color. We can create new color with two way
+One of them is **RGB way. The other way is **Hexadecimal way */
+
+p{
+    background-color: #a888e3; 
+    color: chartreuse;
+}
+button{
+    color: yellow;
+    background-color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is a system of writing color. We can create new color with two way
+One of them is **RGB way. The other way is **Hexadecimal way */

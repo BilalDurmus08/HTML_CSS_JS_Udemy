@@ -1,0 +1,39 @@
+
+h1{
+   text-align: right;
+   width: 65%;                  /* this one specify that the text can go through only %65 */ 
+    text-decoration: purple underline;
+    letter-spacing: 4px;        /* for the add space between two letter */ 
+    font-size: 43px;
+   
+}
+
+nav{
+    font-weight: 600;
+    text-decoration: line-through;
+
+}
+a{
+    text-decoration: none;    /* we cancelled the underline from link */
+}
+aside{
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+
+
+
+
+
+
+
+
+
+/*  **FontFamily**  we have to be aware because all the font family do not exist from every browser */
+/* 
+I have learned in this section of my udemy course that 
+*Text-Align
+*Font-Weight
+*Text-Decoration
+*Line-Height
+*Letter-Spacing */

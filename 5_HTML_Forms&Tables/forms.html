@@ -103,11 +103,34 @@
             <input type="range" name="range" id="rangeId" min="18" max="58" step="4">
             <label for="rangeId">Pick a number</label>
         </div>
-        <label for="textareaId"><h4>You can write what you think</h4></label>
+        <label for="textareaId">
+            <h4>You can write what you think</h4>
+        </label>
         <div>
-        <textarea name="textarea" id="textareaId" cols="30" rows="10" placeholder="Just write something"></textarea>
-    </div>
+            <textarea name="textarea" id="textareaId" cols="30" rows="10" placeholder="Just write something"></textarea>
+        </div>
     </form>
+
+    <hr>
+    </p>
+    <p>
+    <h2>Some Validations</h2>
+    <form action="/dummy">
+        <div>
+            <label for="textId">Surname</label>
+            <input type="text" id="textId" required name="textName" minlength="5" maxlength="15">
+        </div>
+        <div>
+            <label for="emailId">EMail</label>
+            <input type="email" id="emailId" required name="emailName">
+        </div>
+        <div>
+            <label for="urlId">URL</label>
+            <input type="url" id="url" required name="urlId">
+        </div>
+        <button type="submit">Submit!! </button>
+    </form>
+
     </p>
 
 
