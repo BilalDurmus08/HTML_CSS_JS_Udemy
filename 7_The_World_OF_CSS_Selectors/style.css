@@ -1,0 +1,96 @@
+/* 
+*{
+    color: brown;
+} 
+*/
+
+h2,h3{
+    color: #22223b;
+}
+
+body{
+    background-color: #00afb9;
+}
+
+button{
+    font-size: 22px;
+    color: burlywood;
+    background-color: cornflowerblue;
+}
+/* If we want to bring stuff with Id we use # symbol */
+#SignId{
+    color: #ffcdb2;
+    background-color: #b5838d;
+}
+
+span {
+    color: #e9edc9;
+}
+/* If we want to bring stuff with class we use . symbol */
+.span1{
+    color: #3d405b;
+    background-color: #fb6f92;
+}
+/* we can reach inside of something in this way. I mean we can use space*/
+.cSection a{
+    color: #e9edc9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a{
+    color: aquamarine;
+}
+/* this means that every button right after h2  */
+h2 + button{
+    font-size: 20px;
+}
+/* this cover the only the first subset  */
+footer > a {
+    color: white;
+}
+
+input[type ="password"]{
+    color: #00afb9;
+}
+
+.cSection button:hover{
+    background-color: rgb(158, 186, 237);
+} 
+
+.cSection a:hover{
+    text-decoration: underline;
+}
+/* when we keep clicking */
+.cSection button:active{
+    background-color: #fb6f92;
+    color: white;
+}
+
+.cSection:nth-of-type(2n){
+    background-color: #89e3e8;
+}
+
+.cSection h2::first-letter{
+    font-size: 50px;
+} 
+
+
+/* when we select them the desired process will be appear */
+p::selection{
+    background-color: rgb(220, 166, 99);
+}
+
+/* There is prioritise when we select the exact statement
+ Writing "!important" inside of the curly braces  >>>> Id > Class > elements   */
+
+   p::first-line{
+    background-color: bisque;
+}
+
+ /* this one will be appear. Because this is mor spesific */
+#paragraphId::first-line{
+    background-color: #fb6f92;
+}
+           
+  
