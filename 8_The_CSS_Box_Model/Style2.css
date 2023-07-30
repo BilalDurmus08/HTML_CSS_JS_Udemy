@@ -1,0 +1,38 @@
+div {
+
+    height: 200px;
+    width: 200px;
+    background-color: #d6ccc2;
+}
+
+h1 {
+    width: 350px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#Div1 {
+    background-color: #faedca;
+    border-width: 3px;
+    border-color: #d4bf8a;
+    border-style: solid;
+    box-sizing: border-box;
+    /* this allows us that we can fix the border inside of box */
+}
+
+#Div2 {
+    background-color: #decea4;
+    border-color: #6f623f;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 12px;
+
+}
+
+#Div3 {
+    background-color: #d4bf8a;
+    border-color: #1e1b14;
+    border-style: double;
+    border-width: 3px;
+
+}
