@@ -36,3 +36,13 @@ h1 {
     border-width: 3px;
 
 }
+/* we can use padding with so many different way. But the most frequently way is below */
+/* top right buttom left like a clockwise, we do not uses comma */
+/* margin property has a same way to use */
+button{
+    padding: 20px 15px 50px 25px;
+    margin-top: 50px;
+}
+span{
+    margin-left:  50px ;
+}

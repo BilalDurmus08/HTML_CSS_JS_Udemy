@@ -1,0 +1,61 @@
+section {
+    background-color: #023047;
+    height: 500px;
+    width: 500px;
+}
+
+/* this "%" symbol takes parent's widht and height */
+div {
+    background-color: rgb(29, 109, 9);
+    height: 45%;
+    width: 45%;
+}
+
+h1 {
+    height: 100px;
+    line-height: 200%;
+    border: 1px solid black;
+    padding-top: 25px;
+}
+
+#ems {
+    font-size: 15px;
+}
+/* "EM" the font size bring with parent em type. And the other property like margin border we can use "em" */
+#ems p {
+    font-size: 1em;
+    margin: 0.5em;
+}
+h2{
+    font-size: 1em;
+}
+ button{
+    margin: 0.2em;
+    font-size: 0.6em;
+    border: #023047 solid 0.1em ;
+    border-radius: 0.3em;
+    background-color: #219ebc;
+    color: white;
+    }
+/* we can arrange the rem's size with html document like below */
+    html{
+        font-size: 20px;
+    }
+    /* it gets be always normal  */
+    #ems ul{
+        font-size: 1.1em;
+        color: #023047;
+    }
+
+    #rems ul{
+        font-size: 0.8rem;
+    }
+    #rems p{
+        font-size: 1rem;
+    }
+    #rems {
+        font-size: 20px;
+    }
+    #rems h2{
+        font-size: 2rem;
+    }
