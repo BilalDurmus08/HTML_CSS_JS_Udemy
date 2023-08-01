@@ -1,0 +1,46 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: #355070;
+    display: inline-block;
+}
+
+#middle{
+    height: 100px;
+    width: 100px;
+    background-color: #57789e;
+
+}
+/* whatever we do to static of 'position' element we can not move that element anywhere */
+#static #middle{
+    position: static;
+    top: 150;
+    left: 180;
+}
+
+/* The 'relative' elements move with relatively from the main location  */
+#relative #middle{
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+    /* This one positioned relatively the page. And when we scroll page its location never change  */
+#absoulate #middle{
+    position: absolute;
+    top: 300px;
+    left: 600px;
+}
+
+/* this fixed. Can not move. this is position relatively the page. */
+#fixed #middle{
+    position: fixed;
+    top: 100px;
+    left: 900px;
+}
+
+/* when we scroll the page, this is act will be exactly like sticky. this will be stick on page from top */
+#sticky #middle{
+    position: sticky;
+    top: 20px;
+    
+}

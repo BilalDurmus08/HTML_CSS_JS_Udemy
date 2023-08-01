@@ -1,0 +1,58 @@
+nav {
+    width: 250px;
+    height: 250px;
+    background-color: #457b9d;
+    font-size: 10px;
+    transition-property: background-color, font-size, border-radius, color;
+    transition-delay: 0.3s;
+    transition-duration: 2s;
+    text-align: center;
+
+}
+/* delay: stop before start
+duration: time of transition
+property: What will you transit */
+
+nav:hover {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #a8dadc;
+    color: blueviolet;
+}
+
+section div {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #ffc2d1;
+    transition-property: margin-left, background-color, border-radius;     
+    transition-duration: 4s;
+    transition-delay: 0s;
+    text-align: center ;
+    border-radius: 0%;
+    
+}
+
+
+section:hover div {
+    margin-left: 400px;
+    background-color: #6d597a;
+    border-radius: 50%;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: linear;
+}
+div:nth-of-type(2){
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+/* delay: stop before start
+duration: time of transition
+property: What will you transit */
