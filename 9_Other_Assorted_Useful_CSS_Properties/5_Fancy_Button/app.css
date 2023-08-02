@@ -1,0 +1,27 @@
+
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #264653;
+    height: 700px;
+    border-radius: 5px;
+}
+button{
+    background: none;
+    border: solid #dda15e;
+    padding: 1em;
+    color: #dda15e;
+    transition-property: color, border-color, box-shadow, transform;
+    transition-duration: 0.2s;
+    
+}
+
+button:hover{
+    color: #ffff3f;
+    border-color: #ffff3f;
+    box-shadow: 0em 0.5em 0.5em -0.3em #ffff3f;
+    transform: translateY(-7px);
+    cursor: pointer;
+}

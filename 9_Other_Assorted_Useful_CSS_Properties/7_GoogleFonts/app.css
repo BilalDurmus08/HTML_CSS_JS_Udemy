@@ -1,0 +1,21 @@
+section{
+    margin: auto;
+    width: 70%;
+    height: 700px;
+    background: no-repeat url("https://images.unsplash.com/photo-1612873346077-7d4e6e71ec9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80");
+    background-size: cover;
+    padding: 50px;
+}
+h1, h2, h3{
+    font-family: 'Caveat', cursive;
+
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* 
+we find a font-family from google-font-family. And we copy the link, then we paste the link where the html page
+then we copy the css code, and we paste code on css page. Here our font-family is ready to use 
+*/
