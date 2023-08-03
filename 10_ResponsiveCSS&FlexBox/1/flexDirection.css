@@ -1,0 +1,74 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 160;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    /* we can change the direction */
+    justify-content: center;
+    /* this rearrange the MAİN direction */
+    align-items: center;
+    /* this rearrange the CROSS(second direction) direction */
+    flex-wrap: wrap;
+    /*align-content: center;*/
+
+    /* if you do not have wrap statement this will be unnecessary. use that with wrap.   */
+    /*  It hard to tell what it does, but it changes the space with align items's direction.  */
+
+
+}
+
+#container div {
+    width: 150px;
+    height: 150px;
+}
+
+div:nth-of-type(3) {
+    /* this allow us to change only one element from the main position  */
+    align-self: flex-end;
+    /* this let us that if there is some space, the chosen element will grow as we write  */
+    flex-basis: 300px;
+}
+
+div:nth-of-type(1) {
+    /* we give number for the choose how much times will grow  */
+    flex-grow: 2;
+
+}
+div:nth-of-type(5){
+    /* if the size of container is not enough to provide put all the div(in this example div, it can be different)
+    the 'flex-shrink' proposition protects the space for the chosen element */
+    flex-shrink: 0.5;
+}
+
+footer{
+    background-color: wheat;
+    height: 210px;
+    width: 80%;
+    border: solid black 2px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+footer .sideOne{
+    background-color: chocolate;
+    flex:1 2 200px;
+}
+footer .mainly{
+    /* this is shortHand the arrangement: flex-grow, flex-shrink, flex-basis */
+    background-color: brown;
+   flex:2 1 300px;
+   height: 150px;
+}   
+
+

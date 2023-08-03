@@ -1,0 +1,17 @@
+img{
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+body{
+    margin: 0; 
+}
+nav{
+    margin-left: calc(10%/6);
+    width: 30%;
+    border-bottom: 0.005em solid gray;
+    font-size: 1.9em;
+    padding: 1.2em 0;
+    font-family: 'REM', sans-serif;
+
+}
