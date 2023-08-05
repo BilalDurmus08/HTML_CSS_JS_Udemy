@@ -1,0 +1,50 @@
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+    font-size: 4em;
+    
+}
+
+nav{
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+nav main{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+  
+@media (max-width: 750px){
+    h1{
+        color:brown ;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1000px){
+
+    h1{
+        color:cadetblue ;
+        font-size: 3em;    
+    }
+}
+
+@media (max-width: 660px){
+   
+    nav, nav main {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+}
