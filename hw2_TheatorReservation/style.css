@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #047cfc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 1600px) {
+   
+
+    #sign-up{
+        width: 33,333%;
+    }
+
+    #part2{
+        width: 33,333%;
+    }
+
+    #part3{
+        width: 33,333%;
+    }
+
+}
+
+.btn{
+    text-align: center;
+    margin: 10px;
+}
+
+#myButton{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#myButton:hover{
+    background-color: rgb(167, 121, 209);
+}
+
+#price {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+  
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

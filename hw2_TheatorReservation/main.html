@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column" id="sign-up">
+            <h2>User Information</h2>
+            <form id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="column" id="part2">
+            <h2>Admin Interface</h2>
+            <form id="adminForm">
+                <label for="rows">Number of Rows (Max 6):</label>
+                <input type="number" id="rows" name="rows" required max="7">
+
+                <label for="columns">Number of Columns (Max 6):</label>
+                <input type="number" id="columns" name="columns" required max="7">
+                <button type="submit">Set</button>
+
+            </form>
+            <h2>User Interface</h2>
+            <div id="price">25$</div>
+            <div id="button-container"></div>
+            <button id="myButton">Send seat data</button>
+        </div>
+        <div class="column" id="part3">
+            <h2>Selected Seats</h2>
+            <h3>Admin manager</h3>
+            <ul id="listContainer"></ul>
+            <p id="pricePart">Total Price: $</p>
+            <button id="confirmButton">Confirm Selection</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
