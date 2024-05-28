@@ -1,4 +1,13 @@
+var emailValue = ""
+
 document.addEventListener('DOMContentLoaded', () => { //for sign up
+
+    var nameValue ;
+    var surnameValue ;
+    var emailValue ;
+    var phoneValue ;
+    var ageValue;
+
 
     const form = document.getElementById('userForm');
 
@@ -7,13 +16,46 @@ document.addEventListener('DOMContentLoaded', () => { //for sign up
 
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
+        const surnameInput = document.getElementById('surname');
+        const phoneInput = document.getElementById('phone');
+        const ageInput = document.getElementById('age');
 
-        const nameValue = nameInput.value;
-        const emailValue = emailInput.value;
+        nameValue = nameInput.value;
+        surnameValue = surnameInput.value;
+        emailValue = emailInput.value;
+        phoneValue = phoneInput.value;
+        ageValue = ageInput.value;
 
-
+        const confirmButton = document.getElementById('confirmButton');
+        confirmButton.addEventListener('click', () => {
+    
+            const resultString = clickedButtons.join('\n');
+    
+    
+            confirm("Dear Admin Manager\n" + resultString + "\nTotal Amount is: $" + price + "\nStill do you want to accept");
+    
+        });
+    
+        const userInformation = document.getElementById('userInformations');
+        userInformation.innerHTML = "";
+        userInformation.append(nameValue + " " + surnameValue );
 
     });
+
+    document.getElementById("userForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+    
+        const elements = document.getElementsByClassName("hideable");
+    
+        for (var i = 0; i < elements.length; i++)
+            elements[i].style.display = "block";
+    
+        if (emailValue != "admin@admin.com")
+            document.getElementById("admin").style.display = "none";
+        else
+            document.getElementById("admin").style.display = "block";
+    });
+
 
 
     const form1 = document.getElementById('adminForm');
@@ -122,18 +164,8 @@ document.addEventListener('DOMContentLoaded', () => { //for sign up
     );
 
 
-    const confirmButton = document.getElementById('confirmButton');
-    confirmButton.addEventListener('click', () => {
-      
-        const resultString = clickedButtons.join('\n');
-
-
-        confirm("Dear Admin Manager\n" + resultString + "\nTotal Amount is: $" + price + "\nStill do you want to accept");
-    
-    });
-
+   
 
 });
-
 
 
